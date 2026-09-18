@@ -10,7 +10,7 @@ body {
 }
 
 .line {
-  background-color: #240038;
+  background-color: #B38ED8;
   padding: 30px;
   width: 100%;
   position: fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 .dropbutton {
-  background-color: #240038;
+  background-color: #B38ED8;
   color: white;
   position: relative;
   bottom: 5;
@@ -53,20 +53,23 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #240038;
+  background-color: #9967CB;
   color: white;
-  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+.dropdown-content a:hover {
+  filter: brightness(1.2);
+  transition: filter 0.10s ease;
+}
+
 .tooltip {
   position: fixed;
-  top: 500px;
-  left: 900px;
-  margin-top: 8px;
+  bottom: calc(3% + 50px); /* just above the 150px image, plus a small gap */
+  left: 70%;
   background-color: #B38ED8;
   color: white;
   padding: 8px 12px;
@@ -85,16 +88,16 @@ body {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 }
 
-.dropdown:hover .tooltip {
+.check:checked ~ .dropdown:hover .tooltip {
   visibility: visible;
 }
 
 .Test.image {
+  position: fixed;
   width: 150px;
   height: 150px;
   background-image: url('V1.transparent.png');
   background-size: cover;
-  position: fixed;
   bottom: 3%;
   left: 85%;
 }
@@ -112,12 +115,4 @@ body {
 
 input[type=checkbox]:checked ~ .Test.image {
   background-image: url('V2.transparent.png');
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-background {
-  background-color: #04AA6D;
 }
