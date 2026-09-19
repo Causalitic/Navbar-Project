@@ -114,5 +114,5 @@ body {
 }
 
 input[type=checkbox]:checked ~ .Test.image {
-  background-image: url('V1.transparent.png');
+  background-image: url('V2.transparent.png');
 }
