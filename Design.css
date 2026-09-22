@@ -113,6 +113,66 @@ body {
   left: 85%;
 }
 
+@keyframes fadeIn {
+  from {   
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInHalfOp {
+  from {   
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+}
+
+.Redirection_text1 {
+  position: fixed;
+  top: 30%;
+  left: 28%;
+  z-index: 4;
+  color: black;
+  font-size: 18px;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+
+.Redirection_text2 {
+  position: fixed;
+  top: 50%;
+  left: 28%;
+  z-index: 4;
+  color: black;
+  font-size: 18px;
+  animation: fadeInHalfOp 0.8s ease-in-out forwards;
+}
+
+.Redirection_image {
+  position: fixed;
+  width: 800px;
+  height: 500px;
+  bottom: 1%;
+  left: 20%;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.Redirection {
+  position: fixed;
+  bottom: 25%;
+  left: 45%;
+  z-index: 4;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
 input[type=checkbox]:checked ~ .Test.image {
   background-image: url('V2.transparent.png');
 }
